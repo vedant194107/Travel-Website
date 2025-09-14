@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelCraft✈️ | Co.</title>
+    <link rel="icon" icon="images/x-icon" href="121.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+
+    body {
+        font-family: "outfit", sans-serif;
+    }
+    nav {
+        background-color: rgb(212, 212, 212);
+        text-align: center;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 105px;
+        box-shadow: 2px 2px 3px 3px rgb(109, 109, 109);
+    }
+    nav ul li {
+        display: inline;
+        padding: 20px;
+        padding-right: 0;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(60, 59, 24);
+        font-weight: 500;
+    }
+    nav ul li a:hover {
+        color: rgb(60, 0, 0);
+    }
+
+    .about-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Aboutus.jpeg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 105px;
+        margin: 35px 95px;
+        border-radius: 15px;
+        line-height: 45px;
+    }
+
+    .about-hero h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .about-hero p {
+        font-size: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    .about-story {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 30px;
+        background: rgba(129, 145, 149, 0.856);
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s;
+    }
+    
+    .about-story:hover {
+        transform: scale(1.02);
+        border-color: #2B0A16;
+    }
+
+    .about-story h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+  
+    .about-story p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+    
+    .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .about-card {
+        background: #fff3e0;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s;
+    }
+
+    .about-card:hover{
+        transform: scaley(1.05);
+        border-color: #2B0A16;
+    }
+  
+    .about-card h3 {
+        color: #ff9800;
+        margin-bottom: 10px;
+    }
+  
+    .about-card p {
+        color: #444;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    footer {
+        background-color: rgb(40, 40, 40);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+        border-radius: 15px 15px 0 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>✈️TravelCraft</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+            <h1>About ✈️TravelCraft | Co.</h1>
+            <p>We craft unforgettable journeys with care, turning your travel dreams into experiences that last a lifetime</p>
+        </section>
+
+        <section class="about-story">
+            <h2>Our Story</h2>
+            <p>
+                TravelCraft began with a simple idea — to make travel stress-free, personal, and unforgettable. What started as a passion for exploring new places soon grew into a trusted travel planning company.
+            </p>
+            <p>
+                We believe every journey should tell a story. That’s why we focus on crafting trips that blend comfort, culture, and adventure — whether it’s a weekend getaway or a world tour.
+            </p>
+            <p>
+                From families to solo explorers, our team ensures every detail is handled with care, so you can focus on making memories.
+            </p>
+
+            <div class="about-grid">
+            <div class="about-card">
+                <h3>✈️ Our Mission</h3>
+                <p>To become the most trusted travel partner, inspiring explorers across the globe with innovative experiences, transparency, and heartfelt service.</p>
+            </div>
+            <div class="about-card">
+                <h3>🌍 Our Vision</h3>
+                <p>To become the most trusted travel partner, inspiring explorers across the globe with innovative experiences, transparency, and heartfelt service.</p>
+            </div>
+            <div class="about-card">
+                <h3>💎 Our Values</h3>
+                <p>Our values are built on trust, passion, and responsibility — creating journeys that are transparent, customer-focused, and sustainable.</p>
+            </div>
+        </div>
+
+    </section> 
+
+    <footer>
+        <p>© 2025 TravelCraft | Co. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
