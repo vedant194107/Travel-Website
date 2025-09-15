@@ -2,365 +2,293 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelCraft✈️ | Co.</title>
-  <link rel="icon" icon="images/x-icon" href="121.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelCraft✈️ | Co.</title>
+    <link rel="icon" icon="images/x-icon" href="121.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: "Outfit", sans-serif;
-      background: #fdfdfd;
-    }
+        body {
+            font-family: "Outfit", sans-serif;
+        }
 
-    nav {
-      background-color: rgb(212, 212, 212);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 40px;
-      box-shadow: 2px 2px 3px 3px rgb(109, 109, 109);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+        nav {
+            background-color: rgb(212, 212, 212);
+            text-align: center;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 105px;
+            box-shadow: 2px 2px 3px 3px rgb(109, 109, 109);
+        }
 
-    .logo h2 {
-      font-weight: 600;
-      font-size: 22px;
-    }
+        .logo h2 {
+            font-weight: 500;
+        }
 
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-      gap: 20px;
-      justify-content: center;
-    }
+        nav ul {
+            display: inline;
+        }
 
-    nav ul li a {
-      text-decoration: none;
-      color: rgb(60, 59, 24);
-      font-weight: 500;
-      font-size: 16px;
-      transition: 0.2s;
-    }
+        nav ul li {
+            display: inline;
+            padding: 20px;
+            padding-right: 0;
+        }
 
-    nav ul li a:hover {
-      color: rgb(60, 0, 0);
-    }
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(60, 59, 24);
+            font-weight: 500;
+        }
 
-    /* Hero section */
-    .about {
-      background: url(1.jpg);
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      padding: 100px 20px;
-      margin: 20px auto;
-      border-radius: 15px;
-      line-height: 35px;
-      color: #fff;
-      max-width: 1200px;
-    }
+        nav ul li a:hover {
+            color: rgb(60, 0, 0);
+        }
 
-    .about h2 {
-      font-size: 32px;
-    }
+        .about {
+            background: url(1.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 105px;
+            margin: 35px 95px;
+            border-radius: 15px;
+            line-height: 45px;
+        }
 
-    .about h4 {
-      font-size: 18px;
-    }
+        .about h2 {
+            font-size: 35px;
+            word-spacing: 4px;
+            letter-spacing: 1px;
+        }
 
-    /* Marquee */
-    .tagline marquee {
-      margin: 10px auto;
-      font-size: 15px;
-      max-width: 1200px;
-      display: block;
-    }
+        .tagline {
+            margin: 0 125px;
+        }
 
-    .destinations {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 20px;
-      flex-wrap: wrap;
-    }
+        marquee {
+            margin: 0 125px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+        }
 
-    .section-dest {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+        .destinations {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 35px;
+        }
 
-    .section-dest section {
-      margin: 20px;
-      border: 2px solid black;
-      border-radius: 20px;
-      background-color: rgb(196, 189, 180);
-      width: 100%;
-      max-width: 1200px;
-      transition: transform 0.2s;
-      padding: 20px;
-    }
+        .section-dest {
+            position: relative;
+        }
 
-    .section-dest section:hover {
-      transform: scale(1.02);
-      border-color: #2B0A16;
-    }
+        .section-dest section {
+            margin: 25px 95px;
+            border: 2px solid black;
+            border-radius: 40px;
+            background-color: rgb(196, 189, 180);
+            width: 1325px;
+            transition: transform 0.2s;
+        }
 
-    .section-img {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
+        .section-dest section:hover{
+            transform: scale(1.05);
+            border-color: #2B0A16;
+        }
 
-    .section-img img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 15px;
-      flex: 1 1 300px;
-    }
+        .section-img {
+            display: flex;
+        }
 
-    .section-img div {
-      flex: 1 1 400px;
-    }
+        .section-img img {
+            margin: 30px;
+            border-radius: 30px;
+        }
 
-    .section-img h3 {
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
+        .section-img h3 {
+            margin-top: 42px;
+            padding-bottom: 5px;
+        }
 
-    hr {
-      border: none;
-      height: 3px;
-      background-color: rgb(23, 58, 12);
-      margin: 5px 0 10px;
-    }
+        hr {
+            border: none;
+            height: 3px;
+            background-color: rgb(23, 58, 12);
+        }
 
-    .section-img h6 {
-      font-size: 15px;
-      line-height: 22px;
-      font-weight: 500;
-    }
+        .section-img h6 {
+            font-size: 16px;
+            width: 700px;
+            line-height: 25px;
+            padding-top: 10px;
+            font-weight: 500;
+            word-spacing: 2px;
+        }
 
-    .section-img p {
-      padding-top: 8px;
-      font-size: 14px;
-    }
+        .section-img p {
+            padding-top: 25px;
+        }
 
-    .book {
-      margin-top: 15px;
-    }
+        .book {
+            padding-top: 25px;
+        }
 
-    .book button {
-      width: 100%;
-      padding: 12px;
-      border-radius: 10px;
-      background-color: rgb(58, 85, 94);
-      color: white;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      transition: 0.2s;
-    }
+        .book button {
+            padding: 3px 275px;
+            border-radius: 10px;
+            background-color: rgb(58, 85, 94);
+            color: white;
+            font-family: "Outfit", sans-serif;
+            font-size: 17px;
+            word-spacing: 2px;
+            border: none;
+            cursor: pointer;
+        }
 
-    .book button:hover {
-      background-color: rgb(5, 36, 46);
-    }
+        .book button:hover {
+            background-color: rgb(5, 36, 46);
+        }
 
-    footer {
-      background-color: rgb(40, 40, 40);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-      border-radius: 15px 15px 0 0;
-      font-size: 13px;
-    }
-
-    @media (max-width: 992px) {
-      nav {
-        padding: 12px 20px;
-      }
-
-      nav ul {
-        gap: 15px;
-      }
-
-      .about h2 {
-        font-size: 26px;
-      }
-
-      .about h4 {
-        font-size: 16px;
-      }
-
-      .section-img {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .section-img div {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .logo h2 {
-        font-size: 18px;
-      }
-
-      nav ul li a {
-        font-size: 14px;
-      }
-
-      .about {
-        padding: 60px 15px;
-      }
-
-      .about h2 {
-        font-size: 22px;
-      }
-
-      .book button {
-        font-size: 14px;
-      }
-
-      footer {
-        font-size: 12px;
-      }
-    }
-  </style>
+        footer {
+            background-color: rgb(40, 40, 40);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-radius: 15px 15px 0 0;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <h2>✈️TravelCraft</h2>
-      </div>
-      <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>✈️TravelCraft</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="about">
-    <h2>Your Family Trip Planner - ✈️TravelCraft</h2>
-    <h4>🌐India's no.1 trustable Travel Company</h4>
-    <h4>Booking - Destination - Stay - Food - Travel - NightOut - Returning</h4>
-  </div>
+    <div class="about">
+        <h2>Your Family Trip Planner - ✈️TravelCraft</h2>
+        <h4>🌐India's no.1 trustable Travel Company</h4>
+        <h4>Booking - Destination - Stay - Food - Travel - NightOut - Returning</h4>
+    </div>
 
-  <div class="tagline">
-    <marquee direction="left">
-      "Welcome to the TravelCraft✈️ | Co. <b>Book your trip now and get 10% off on all packages!</b> Hurry,
-      limited time offer! & Enjoy your trip!
-    </marquee>
-  </div>
+    <div class="tagline">
+        <marquee direction="left">
+            "Welcome to the TravelCraft✈️ | Co. <b>Book your trip now and get 10% off on all packages!</b> Hurry,
+            limited time offer! & Enjoy your trip!
+        </marquee>
+    </div>
 
-  <div class="destinations">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-      <path
-        d="M280-80v-100l120-84v-144L80-280v-120l320-224v-176q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800v176l320 224v120L560-408v144l120 84v100l-200-60-200 60Z" />
-    </svg>
-    <h2>Destination</h2>
-  </div>
+    <div class="destinations">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+            <path
+                d="M280-80v-100l120-84v-144L80-280v-120l320-224v-176q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800v176l320 224v120L560-408v144l120 84v100l-200-60-200 60Z" />
+        </svg>
+        <h2>Destination</h2>
+    </div>
 
-  <div class="section-dest">
-    <section>
-      <div class="section-img">
-        <img src="london.jpg" alt="London City">
-        <div>
-          <h3>London - United Kingdom</h3>
-          <hr>
-          <h6>London, the capital of the UK, is a vibrant mix of historic landmarks and modern attractions.
-            From Big Ben to the London Eye, it’s a global hub for culture, art, and travel.</h6>
-          <p><b>Package:</b> 5 Days, 1 Month, Easy</p>
-          <p><b>Airport:</b> Heathrow Airport</p>
-          <p><b>Travel Time:</b> 8 hours</p>
-          <div class="book">
-            <button>₹ 1,00,000 Book Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="section-dest">
+        <section>
+            <div class="section-img">
+                <img src="london.jpg" alt="London City" height="300px">
+                <div>
+                    <h3>London - United Kingdom</h3>
+                    <hr>
+                    <h6>London, the capital of the UK, is a vibrant mix of historic landmarks and modern attractions.
+                        From Big Ben to the London Eye, it’s a global hub for culture, art, and travel.</h6>
+                    <p><b>Package:</b> 5 Days, 1 Month, Easy</p>
+                    <p><b>Airport:</b> Heathrow Airport</p>
+                    <p><b>Travel Time:</b> 8 hours</p>
+                    <div class="book">
+                        <button>₹ 1,00,000 Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <div class="section-img">
-        <img src="USA2.jpg" alt="usa">
-        <div>
-          <h3>America - United States America</h3>
-          <hr>
-          <h6>The United States of America is a country of 50 states covering a vast swath of North America,
-            with diverse geography and culture.</h6>
-          <p><b>Package:</b> 10 Days, 2 Month, Hard</p>
-          <p><b>Airport:</b> JFK International Airport</p>
-          <p><b>Travel Time:</b> 15 hours</p>
-          <div class="book">
-            <button>₹ 2,00,000 Book Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
+        <section>
+            <div class="section-img">
+                <img src="USA2.jpg" alt="usa" height="300px">
+                <div>
+                    <h3>America - United States America</h3>
+                    <hr>
+                    <h6>The United States of America is a country of 50 states covering a vast swath of North America,
+                        with diverse geography and culture.</h6>
+                    <p><b>Package:</b> 10 Days, 2 Month, Hard</p>
+                    <p><b>Airport:</b> JFK International Airport</p>
+                    <p><b>Travel Time:</b> 15 hours</p>
+                    <div class="book">
+                        <button>₹ 2,00,000 Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <div class="section-img">
-        <img src="dubai3.jpg" alt="Dubai">
-        <div>
-          <h3>Dubai - United Arabs</h3>
-          <hr>
-          <h6>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern
-            architecture, and a lively nightlife scene.</h6>
-          <p><b>Package:</b> 7 Days, 1 Month, Medium</p>
-          <p><b>Airport:</b> Dubai International Airport</p>
-          <p><b>Travel Time:</b> 5 hours</p>
-          <div class="book">
-            <button>₹ 1,50,000 Book Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
+        <section>
+            <div class="section-img">
+                <img src="dubai3.jpg" alt="Dubai" height="300px">
+                <div>
+                    <h3>Dubai - United Arabs</h3>
+                    <hr>
+                    <h6>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern
+                        architecture, and a lively nightlife scene.</h6>
+                    <p><b>Package:</b> 7 Days, 1 Month, Medium</p>
+                    <p><b>Airport:</b> Dubai International Airport</p>
+                    <p><b>Travel Time:</b> 5 hours</p>
+                    <div class="book">
+                        <button>₹ 1,50,000 Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <div class="section-img">
-        <img src="australia1.jpg" alt="australia">
-        <div>
-          <h3>Australia</h3>
-          <hr>
-          <h6>Australia is a country and continent surrounded by the Indian and Pacific oceans, known for its
-            Sydney Opera House and natural wonders.</h6>
-          <p><b>Package:</b> 8 Days, 1 Month, Medium</p>
-          <p><b>Airport:</b> Sydney Airport</p>
-          <p><b>Travel Time:</b> 12 hours</p>
-          <div class="book">
-            <button>₹ 1,80,000 Book Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+        <section>
+            <div class="section-img">
+                <img src="australia1.jpg" alt="australia" height="300px">
+                <div>
+                    <h3>Australia</h3>
+                    <hr>
+                    <h6>Australia is a country and continent surrounded by the Indian and Pacific oceans, known for its
+                        Sydney Opera House and natural wonders.</h6>
+                    <p><b>Package:</b> 8 Days, 1 Month, Medium</p>
+                    <p><b>Airport:</b> Sydney Airport</p>
+                    <p><b>Travel Time:</b> 12 hours</p>
+                    <div class="book">
+                        <button>₹ 1,80,000 Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-  <footer>
-    <p>© 2025 TravelCraft | Co. All Rights Reserved.</p>
-  </footer>
+    <footer>
+        <p>© 2025 TravelCraft | Co. All Rights Reserved.</p>
+    </footer>
+
 </body>
 
 </html>
